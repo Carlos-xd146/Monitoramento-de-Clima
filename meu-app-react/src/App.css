@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f8f9fa;
+}
+
+.app-container {
+  min-height: 100vh;
+}
+
+.header {
+  background: #0d6efd;
+  color: white;
+  margin: 0, auto;
+  padding: 20px;
+}
+
+header p {
+  margin-top: 4px;
+  opacity: 0.85;
+}
+
+.btn-adicionar {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn.buscar {
+  flex: 1;
+  padding: 10pc;
+  background: #198754;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-cancelar {
+  padding: 10px 16px;
+  background: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-remover {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.input-card {
+  background: #e9ecef;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.input-card h5 {
+  margin-bottom: 10px;
+}
+
+.input-card input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius:  6px;
+  margin-bottom: 10px;
+}
+
+.input-botoes {
+  display: flex;
+  gap: 8px;
+}
+
+/* Card Cidade */
+
+.card-whapper{
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.card {
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icone {font-size: 2rem;}
+.card-dados {text-align: right;}
+.card-dados h3 {font-size: 1.8rem;}
+.card-dados p {color: #555; margin: 2px 0;}
+.card-alerta {margin-top: 12px; font-size: 0.85rem;}
+
+/* Mensagens */
+
+.msg-info {
+  background: #cff4fc;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.msg-erro {
+  background: #f8d7da;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.msg-vazio {
+  background: #e2e3e5;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
