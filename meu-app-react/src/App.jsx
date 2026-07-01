@@ -1,10 +1,10 @@
 import { use, useState } from "react";
 import './App.css';
 
-import CidadeCard from './components/CidadeCard';
+// import CidadeCard from './components/CidadeCard';
 import BotaoAdicionarCidade from "./components/BotaoAdicionarCidade";
-import InputCidade from '.components/InputCidade';
-import {buscarCimaCidade, definirNivelAlerta} from './services/weatherService';
+// import InputCidade from './components/InputCidade';
+// import {buscarCimaCidade, definirNivelAlerta} from './services/weatherService';
 
 export default function App(){
   const [cidades, setCidades] = useState([])
@@ -21,7 +21,7 @@ return(
     </header>
     <div className="container">
       {!mostraInput && (
-        <BotaoAdicionarCidade onClick={() >= setMostraInput(true)}/>
+        <BotaoAdicionarCidade onClick={() => setMostraInput(true)}/>
       )}
       
     </div>
