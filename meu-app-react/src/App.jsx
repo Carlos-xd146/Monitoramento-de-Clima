@@ -26,7 +26,7 @@ export default function App() {
       );
       setCidades((prev) => [
         ...prev,
-        { id: Datenow(), ...dadosClima, nivelAlerta }
+        { id: Date.now(), ...dadosClima, nivelAlerta }
       ]);
       setMostraInput(false);
     } catch (err) {
@@ -37,7 +37,7 @@ export default function App() {
   };
 
   const handleRemoverCidade = (id) => {
-    setCidades(() => prev.filter((c) => c.id !== id));
+    setCidades((prev) => prev.filter((c) => c.id !== id));
   };
 
   return (
@@ -65,12 +65,13 @@ export default function App() {
           ) : (
             cidades.map((cidade) => (
               <div key={cidade.id} className="card-wrapper">
-                <CidadeCard {...cidade}/>
                 <button 
                   className="btn-remover"
                   onClick={() => handleRemoverCidade(cidade.id)}>
                     X
                   </button>
+                <CidadeCard {...cidade}/>
+
               </div>
             ))
           )}

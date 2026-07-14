@@ -3,7 +3,7 @@ const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
 export async function buscarClimaCidade(cidade) {
     try {
-        const url = `${BASE_URL}?q=${cidade}$units=metric&lang=pt_br&appid=${API_KEY}`;
+        const url = `${BASE_URL}?q=${cidade}&units=metric&lang=pt_br&appid=${API_KEY}`;
         const response = await fetch(url);
         const dados = await response.json();
 

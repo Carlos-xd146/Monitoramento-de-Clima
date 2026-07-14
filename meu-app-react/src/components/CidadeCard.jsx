@@ -9,13 +9,13 @@ export default function CidadeCard({
     };
 
     const obterIcone = () => {
-        if (condicao.toLowerCase().includes('rain')) return '🌧';
-        return '☁';
+        if (condicao.toLowerCase().includes('rain')) return '🌧️';
+        return '☁️';
     };
 
     const obterMensagemAlerta = () => {
-        if (nivelAlerta === 'vermelho') return '⚠ ALERTA: Risco alto de atraso';
-        if (nivelAlerta === 'amarelo') return '⚠ AMARELO: Monitore a situação';
+        if (nivelAlerta === 'vermelho') return '🚨 ALERTA: Risco alto de atraso';
+        if (nivelAlerta === 'amarelo') return '⚠️ AMARELO: Monitore a situação';
         return '✅ VERDE: Seguro para entrega';
     };
     return (

@@ -6,7 +6,13 @@
 
 body {
   font-family: sans-serif;
-  background: #f8f9fa;
+  background: rgb(255, 240, 240);
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .app-container {
@@ -16,11 +22,11 @@ body {
 .header {
   background: #0d6efd;
   color: white;
-  margin: 0, auto;
+  margin: 0 auto;
   padding: 20px;
 }
 
-header p {
+.header p {
   margin-top: 4px;
   opacity: 0.85;
 }
@@ -37,9 +43,9 @@ header p {
   font-size: 1rem;
 }
 
-.btn.buscar {
+.btn-buscar {
   flex: 1;
-  padding: 10pc;
+  padding: 10px 16px;
   background: #198754;
   color: white;
   border: none;
@@ -57,9 +63,9 @@ header p {
 }
 
 .btn-remover {
-  position: absolute;
-  top: 8px;
-  right: 8px;
+  position: relative;
+  top: 30px;
+  left: 10px;
   background: #dc3545;
   color: white;
   border: none;
@@ -107,7 +113,7 @@ header p {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.card-top {
+.card-topo {
   display: flex;
   justify-content: space-between;
   align-items: center;
