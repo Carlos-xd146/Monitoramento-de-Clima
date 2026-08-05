@@ -1,13 +1,10 @@
 import { use, useState } from "react";
 import './App.css';
 
-// import CidadeCard from './components/CidadeCard';
 import BotaoAdicionarCidade from "./components/BotaoAdicionarCidade";
 import InputCidade from "./components/InputCidade";
 import { buscarClimaCidade, definirNivelAlerta } from "./services/weatherService";
 import CidadeCard from "./components/CidadeCard";
-// import InputCidade from './components/InputCidade';
-// import {buscarCimaCidade, definirNivelAlerta} from './services/weatherService';
 
 export default function App() {
   const [cidades, setCidades] = useState([])
